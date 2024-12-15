@@ -1,0 +1,114 @@
+<!doctype html>
+<html
+	lang="en"
+	style="
+		margin: 0;
+		padding: 0;
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+	"
+>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<style>
+			:root {
+				--bg: white;
+				--col:   #27272a;
+				--bg-dark: #0f0f11;
+				--col-dark: #f4f4f5;
+			}
+
+
+			body {
+				background: var(--bg);
+				color: var(--col);
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			@media (prefers-color-scheme: dark) {
+				body {
+					background: var(--bg-dark);
+					color: var(--col-dark);
+				}
+			}
+		</style>
+
+		<meta property="og:url" content="https://gradio.app/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="" />
+		<meta property="og:title" content="Prediksi Penjualan Harian" />
+		<meta
+			property="og:description"
+			content=""
+		/>
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:creator" content="@teamGradio" />
+		<meta name="twitter:title" content="Prediksi Penjualan Harian" />
+		<meta
+			name="twitter:description"
+			content=""
+		/>
+		<meta name="twitter:image" content="" />
+
+		<script data-gradio-mode>
+			window.__gradio_mode__ = "app";
+			window.iFrameResizer = {
+				heightCalculationMethod: "taggedElement"
+			};
+			window.parent?.postMessage(
+				{ type: "SET_SCROLLING", enabled: false },
+				"*"
+			);
+		</script>
+
+		<script>window.gradio_config = {"version":"5.9.0","api_prefix":"/gradio_api","mode":"interface","app_id":14678830713147889903,"dev_mode":false,"analytics_enabled":true,"components":[{"id":3,"type":"markdown","props":{"value":"\u003ch1 style=\u0027text-align: center; margin-bottom: 1rem\u0027\u003ePrediksi Penjualan Harian\u003c/h1\u003e","show_label":false,"rtl":false,"latex_delimiters":[{"left":"$$","right":"$$","display":true}],"visible":true,"elem_classes":[],"sanitize_html":true,"line_breaks":false,"header_links":false,"show_copy_button":false,"container":false,"name":"markdown","_selectable":false},"skip_api":false,"component_class_id":"654b407b152b689a75ae6e936cdf1be2","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"# Hello!"},{"id":4,"type":"markdown","props":{"value":"Masukkan status promosi (0 atau 1), dan dapatkan prediksi penjualan harian.","show_label":false,"rtl":false,"latex_delimiters":[{"left":"$$","right":"$$","display":true}],"visible":true,"elem_classes":[],"sanitize_html":true,"line_breaks":false,"header_links":false,"show_copy_button":false,"container":false,"name":"markdown","_selectable":false},"skip_api":false,"component_class_id":"654b407b152b689a75ae6e936cdf1be2","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"# Hello!"},{"id":5,"type":"row","props":{"variant":"default","visible":true,"equal_height":false,"show_progress":false,"name":"row"},"skip_api":true,"component_class_id":"58f59d1caa4b63161ae89f53fb1ea3e9","key":null},{"id":6,"type":"column","props":{"scale":1,"min_width":320,"variant":"default","visible":true,"show_progress":false,"name":"column"},"skip_api":true,"component_class_id":"73b3a7d60a2ccce94d4900e01c75247c","key":null},{"id":7,"type":"column","props":{"scale":1,"min_width":320,"variant":"default","visible":true,"show_progress":false,"name":"column"},"skip_api":true,"component_class_id":"73b3a7d60a2ccce94d4900e01c75247c","key":null},{"id":0,"type":"number","props":{"label":"Apakah ada promosi? (0=Tidak, 1=Ya)","show_label":true,"container":true,"min_width":160,"visible":true,"elem_classes":[],"step":1,"name":"number","_selectable":false},"skip_api":false,"component_class_id":"10518de10df20b869f227f0d2ee4d71c","key":null,"api_info":{"type":"number"},"api_info_as_input":{"type":"number"},"api_info_as_output":{"type":"number"},"example_inputs":3},{"id":8,"type":"form","props":{"scale":0,"min_width":0,"name":"form"},"skip_api":true,"component_class_id":"6b27d618eebbcdddb5d84ac543e5ab5b","key":null},{"id":9,"type":"row","props":{"variant":"default","visible":true,"equal_height":false,"show_progress":false,"name":"row"},"skip_api":true,"component_class_id":"58f59d1caa4b63161ae89f53fb1ea3e9","key":null},{"id":10,"type":"button","props":{"value":"Clear","variant":"secondary","visible":true,"interactive":true,"elem_classes":[],"show_api":false,"name":"button","_selectable":false},"skip_api":true,"component_class_id":"67b70c2b3d0c6e02ae02897676b082d7","key":null},{"id":11,"type":"button","props":{"value":"Submit","variant":"primary","visible":true,"interactive":true,"elem_classes":[],"name":"button","_selectable":false},"skip_api":true,"component_class_id":"089297e7fee3574c50894d2f697fddc7","key":null},{"id":12,"type":"column","props":{"scale":1,"min_width":320,"variant":"default","visible":true,"show_progress":false,"name":"column"},"skip_api":true,"component_class_id":"73b3a7d60a2ccce94d4900e01c75247c","key":null},{"id":2,"type":"textbox","props":{"lines":1,"max_lines":20,"label":"output","show_label":true,"container":true,"min_width":160,"interactive":false,"visible":true,"autofocus":false,"autoscroll":true,"elem_classes":[],"type":"text","rtl":false,"show_copy_button":false,"submit_btn":false,"stop_btn":false,"name":"textbox","_selectable":false},"skip_api":false,"component_class_id":"3dbcbede1deda3e92adb8f07f3f93792","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"Hello!!"},{"id":13,"type":"row","props":{"variant":"default","visible":true,"equal_height":false,"show_progress":false,"name":"row"},"skip_api":true,"component_class_id":"58f59d1caa4b63161ae89f53fb1ea3e9","key":null},{"id":14,"type":"button","props":{"value":"Flag","variant":"secondary","visible":true,"interactive":true,"elem_classes":[],"name":"button","_selectable":false},"skip_api":true,"component_class_id":"089297e7fee3574c50894d2f697fddc7","key":null},{"id":15,"type":"form","props":{"scale":0,"min_width":0,"name":"form"},"skip_api":true,"component_class_id":"6b27d618eebbcdddb5d84ac543e5ab5b","key":null}],"css":"","connect_heartbeat":false,"js":"","head":"","title":"Prediksi Penjualan Harian","space_id":null,"enable_queue":true,"show_error":false,"show_api":true,"is_colab":true,"max_file_size":null,"stylesheets":["https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600\u0026display=swap"],"theme":"default","protocol":"sse_v3","body_css":{"body_background_fill":"white","body_text_color":"#27272a","body_background_fill_dark":"#0f0f11","body_text_color_dark":"#f4f4f5"},"fill_height":false,"fill_width":false,"theme_hash":"76ee63afdb6c2791ddf9b92428cb796885031b4a4f1259df434def0a7c3f9d63","layout":{"id":1,"children":[{"id":3},{"id":4},{"id":5,"children":[{"id":6,"children":[{"id":7,"children":[{"id":8,"children":[{"id":0}]}]},{"id":9,"children":[{"id":10},{"id":11}]}]},{"id":12,"children":[{"id":15,"children":[{"id":2}]},{"id":13,"children":[{"id":14}]}]}]}]},"dependencies":[{"id":0,"targets":[[11,"click"],[0,"submit"]],"inputs":[0],"outputs":[2],"backend_fn":true,"js":null,"queue":true,"api_name":"predict","scroll_to_output":true,"show_progress":"full","batch":false,"max_batch_size":4,"cancels":[],"types":{"generator":false,"cancel":false},"collects_event_data":false,"trigger_after":null,"trigger_only_on_success":false,"trigger_mode":"once","show_api":true,"zerogpu":false,"rendered_in":null,"connection":"sse","time_limit":null,"stream_every":0.5,"like_user_message":false,"event_specific_args":[]},{"id":1,"targets":[[10,"click"]],"inputs":[],"outputs":[0,2],"backend_fn":false,"js":"() =\u003e [null, null]","queue":false,"api_name":"js_fn","scroll_to_output":false,"show_progress":"full","batch":false,"max_batch_size":4,"cancels":[],"types":{"generator":false,"cancel":false},"collects_event_data":false,"trigger_after":null,"trigger_only_on_success":false,"trigger_mode":"once","show_api":false,"zerogpu":false,"rendered_in":null,"connection":"sse","time_limit":null,"stream_every":0.5,"like_user_message":false,"event_specific_args":null},{"id":2,"targets":[[10,"click"]],"inputs":[],"outputs":[7],"backend_fn":false,"js":"() =\u003e [{\"variant\": null, \"visible\": true, \"__type__\": \"update\"}]\n            ","queue":false,"api_name":"js_fn_1","scroll_to_output":false,"show_progress":"full","batch":false,"max_batch_size":4,"cancels":[],"types":{"generator":false,"cancel":false},"collects_event_data":false,"trigger_after":null,"trigger_only_on_success":false,"trigger_mode":"once","show_api":false,"zerogpu":false,"rendered_in":null,"connection":"sse","time_limit":null,"stream_every":0.5,"like_user_message":false,"event_specific_args":null},{"id":3,"targets":[[14,"click"]],"inputs":[],"outputs":[14],"backend_fn":true,"js":null,"queue":false,"api_name":"lambda","scroll_to_output":false,"show_progress":"full","batch":false,"max_batch_size":4,"cancels":[],"types":{"generator":false,"cancel":false},"collects_event_data":false,"trigger_after":null,"trigger_only_on_success":false,"trigger_mode":"once","show_api":false,"zerogpu":false,"rendered_in":null,"connection":"sse","time_limit":null,"stream_every":0.5,"like_user_message":false,"event_specific_args":null},{"id":4,"targets":[[14,"click"]],"inputs":[0,2],"outputs":[14],"backend_fn":true,"js":null,"queue":false,"api_name":"Flag","scroll_to_output":false,"show_progress":"full","batch":false,"max_batch_size":4,"cancels":[],"types":{"generator":false,"cancel":false},"collects_event_data":false,"trigger_after":null,"trigger_only_on_success":false,"trigger_mode":"once","show_api":false,"zerogpu":false,"rendered_in":null,"connection":"sse","time_limit":null,"stream_every":0.5,"like_user_message":false,"event_specific_args":null},{"id":5,"targets":[[10,"click"]],"inputs":[],"outputs":[14],"backend_fn":true,"js":null,"queue":false,"api_name":"reset","scroll_to_output":false,"show_progress":"full","batch":false,"max_batch_size":4,"cancels":[],"types":{"generator":false,"cancel":false},"collects_event_data":false,"trigger_after":null,"trigger_only_on_success":false,"trigger_mode":"once","show_api":false,"zerogpu":false,"rendered_in":null,"connection":"sse","time_limit":null,"stream_every":0.5,"like_user_message":false,"event_specific_args":null}],"root":"https://758d02f3b189535dcf.gradio.live","username":null};</script><script>window.gradio_api_info = {"named_endpoints":{"/predict":{"parameters":[{"label":"Apakah ada promosi? (0=Tidak, 1=Ya)","parameter_name":"promotion","parameter_has_default":false,"parameter_default":null,"type":{"type":"number"},"python_type":{"type":"float","description":""},"component":"Number","example_input":3}],"returns":[{"label":"output","type":{"type":"string"},"python_type":{"type":"str","description":""},"component":"Textbox"}],"show_api":true}},"unnamed_endpoints":{}};</script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.1/iframeResizer.contentWindow.min.js"
+			async
+		></script>
+		<script type="module" crossorigin src="https://gradio.s3-us-west-2.amazonaws.com/5.9.0/gradio.js"></script>
+		
+	</head>
+
+	<body
+		style="
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+		"
+	>
+		<gradio-app
+			control_page_title="true"
+			embed="false"
+			eager="true"
+			style="display: flex; flex-direction: column; flex-grow: 1"
+		>
+		</gradio-app>
+		<script>
+			const ce = document.getElementsByTagName("gradio-app");
+
+			if (ce[0]) {
+				ce[0].addEventListener("domchange", () => {
+					document.body.style.padding = "0";
+				});
+				document.body.style.padding = "0";
+			}
+		</script>
+	</body>
+</html>
